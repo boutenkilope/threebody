@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Three Body Simulation</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                overflow: hidden;
+                background-color: #000;
+            }
+
+            #controls {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            #controls-row {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            #controls label {
+                color: white;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+
+            #controls input {
+                width: 60px;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            #controls button {
+                padding: 5px 15px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            #controls button:hover {
+                background-color: #45a049;
+            }
+
+            #help-text {
+                color: white;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                line-height: 1.6;
+                margin-top: 5px;
+            }
+
+            #help-text strong {
+                color: #4caf50;
+            }
+
+            #myCanvas {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="controls">
+            <div id="controls-row">
+                <label for="numStars">Number of Stars:</label>
+                <input
+                    type="number"
+                    id="numStars"
+                    min="1"
+                    max="1000"
+                    value="3"
+                />
+                <button id="restartBtn">Restart</button>
+            </div>
+            <div id="help-text">
+                <strong>Controls:</strong> <strong>R</strong> - Reset |
+                <strong>P</strong> - Pause | <strong>A</strong> - Zoom Out |
+                <strong>Z</strong> - Zoom In | <strong>Arrow Keys</strong> - Pan
+            </div>
+        </div>
+        <canvas id="myCanvas"></canvas>
+        <script src="three body.js"></script>
+    </body>
+</html>
