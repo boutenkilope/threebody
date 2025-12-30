@@ -4,7 +4,15 @@ A simple simulation of the three-body problem in python.
 
 Re-reading Liu Cixin's Three-Body Problem, wanted to make this to visualize the three-body problem.
 
-## How to
+Initially done in Python, then I asked cursor to port it to JavaScript.
+
+## How to run
+
+### JS
+
+Test it [here](https://boutenkilope.github.io/threebody/), or simply open the `index.html` file in your browser on local.
+
+### Python
 
 Install [pygame](https://pypi.org/project/pygame/), then run `threebody.py` with python 3.11 or higher.
 
